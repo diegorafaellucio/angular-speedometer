@@ -98,7 +98,7 @@ export class GuageWithColorBandComponent implements AfterViewInit, OnInit, OnCha
     }
 
     private initNeedle(): void {
-        this.needleLength = (this.svgHeight - this.margin.left - this.margin.right - this.barWidth) - 55;
+        this.needleLength = (this.svgHeight - this.margin.left - this.margin.right - this.barWidth) - 10;
         this.needleCircleSize = this.svgHeight * 0.07;
         if (!this.needle) {
             this.needle = new Needle(this.needleLength, this.needleCircleSize);
